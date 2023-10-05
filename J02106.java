@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class J02106 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int dem = 0;
+        for(int i = 0; i<n; i++)
+        {
+            int cnt = 0;
+            for(int j = 0; j<3; j++)
+            {
+                int x;
+                x = sc.nextInt();
+                if(x==1)
+                {
+                    cnt++;
+                }
+            }
+            if(cnt>1)
+            {
+                dem++;
+            }
+        }
+        System.out.println(dem);
+        sc.close();
+    }
+    
+}
